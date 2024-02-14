@@ -42,8 +42,8 @@ section{
 .btn{
     margin-top: 1rem;
     display: inline-block;
-    padding: .8rem 3rem;
-    font-size: 1.7rem;
+    padding: .4rem 1rem;
+    font-size: 1.3rem;
     border-radius: .5rem;
     border:.2rem solid var(--black);
     color: var(--black);
@@ -70,7 +70,7 @@ section{
 }
 
 .header .logo{
-    font-size: 2.5 rem;
+    font-size: 30px;
     font-weight: bolder;
     color: var(--black);
 }
@@ -89,7 +89,7 @@ section{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #f8f3f3;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -105,7 +105,7 @@ section{
   }
   
   .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #efeff1d0;
   }
   
   .dropdown:hover .dropdown-content {
@@ -121,7 +121,7 @@ section{
     font-size: 16px;  
     border: none;
     outline: none;
-    color: white;
+    color: rgb(19, 13, 13);
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -154,12 +154,14 @@ section{
 /*Main End*/
 
 /*Header Start*/
+
+/*Search Start*/
 .header .search-form{
     position: absolute;
     top: 110%;
     right: -110%;
-    width: 50rem;
-    height: 5rem;
+    width: 30rem;
+    height: 3rem;
     background: #fff;
     border-radius: .5rem;
     overflow: hidden;
@@ -174,11 +176,11 @@ section{
 }
 
 .header .search-form input{
-    height: 100%;
+    height: 50%;
     width: 100%;
     background: none;
     text-transform: none;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: var(--black);
     padding: 0 1.5rem;
 }
@@ -193,7 +195,9 @@ section{
 .header .search-form label:hover{
     color: var(--orange);
 }
+/*Search End*/
 
+/*Shopping Start*/
 .header .shopping-cart{
     position: absolute;
     top: 110%;
@@ -201,7 +205,7 @@ section{
     padding: 1rem;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
-    width: 35rem;
+    width: 20rem;
     background:#fff;
 }
 
@@ -219,11 +223,11 @@ section{
 }
 
 .header .shopping-cart .box img{
-    height: 10rem;
+    height: 5rem;
 }
 
 .header .shopping-cart .box .fa-trash{
-    font-size: 2rem;
+    font-size: 1.4rem;
     position: absolute;
     top: 50%;
     right: 2rem;
@@ -252,7 +256,7 @@ section{
 }
 
 .header .shopping-cart .total{
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     padding: 1rem 0;
     text-align:center;
     color: var(--black);
@@ -263,7 +267,9 @@ section{
     text-align: center;
     margin: 1rem;
 }
+/*Shopping Cart End*/
 
+/*Login Start*/
 .header .login-form{
     position: absolute;
     top: 110%;
@@ -282,7 +288,7 @@ section{
 }
 
 .header .login-form h3{
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     text-transform: uppercase;
     color: var(--black);
 }
@@ -293,14 +299,14 @@ section{
     background: #eee;
     border-radius: .5rem;
     padding: 1rem;
-    font-size: 1.6rem;
+    font-size: 1rem;
     color: var(--black);
     text-transform: none;
 }
 
 .header .login-form p{
-    font-size: 1.4rem;
-    padding: 5rem 0;
+    font-size: 1rem;
+    padding: 0.5rem 0;
     color: var(--light-color);
 }
 
@@ -308,6 +314,8 @@ section{
     color: var(--orange);
     text-decoration: underline;
 }
+/*Login end*/
+
 /*Header End*/
 
 /*Home Start*/
@@ -484,7 +492,6 @@ section{
     .header .navbar a{
         font-size: 2rem;
         margin: 2rem 2.5rem;
-        display: block;
     }
 }
 
