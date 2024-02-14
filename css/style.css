@@ -3,8 +3,10 @@
 
 :root{
  --turque:#40e0d0;
- --orange:#ff7800;
+ --pawsha:#e55;
+ --orange:#FFA500;
  --black: #130f40;
+ --white: #FFFFFF;
  --light-color: #666;
  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
  --border: 2rem solid rgba(0, 0, 0, .1);
@@ -65,14 +67,14 @@ section{
     align-items: center;
     justify-content: space-between;
     padding: 2rem 9%;
-    background: #fff;
+    background: #30aef7;
     box-shadow: var(--box-shadow);
 }
 
 .header .logo{
     font-size: 30px;
     font-weight: bolder;
-    color: var(--black);
+    color: var(--pawsha);
 }
 
 .header .logo i{
@@ -118,7 +120,7 @@ section{
   }
   
   .dropdown .dropbtn {
-    font-size: 16px;  
+    font-size: 20px;  
     border: none;
     outline: none;
     color: rgb(19, 13, 13);
@@ -138,7 +140,7 @@ section{
     line-height: 4.5rem;
     border-radius: .5rem;
     color: var(--black);
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin-left: .3rem;
     cursor: pointer;
     text-align: center;
@@ -180,13 +182,13 @@ section{
     width: 100%;
     background: none;
     text-transform: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--black);
     padding: 0 1.5rem;
 }
 
 .header .search-form label{
-    font-size: 2.2rem;
+    font-size: 1.2rem;
     padding-right: 1.5rem;
     color:var(--black);
     cursor:pointer;
@@ -354,18 +356,18 @@ section{
 
 /*footer*/
 .footer{
-    background: #fff;
+    background: #040c10;
 }
 
 .footer .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    gap: 1.2rem;
 }
 
 .footer .box-container .box h3{
-    font-size: 2.5rem;
-    color:var(--black);
+    font-size: 1.5rem;
+    color:var(--pawsha);
     padding: 1rem 0;
 }
 
@@ -375,9 +377,9 @@ section{
 
 .footer .box-container .box .links{
     display: block;
-    font-size: 1.5rem;
-    color: var(--light-color);
-    padding:1rem 0;
+    font-size: 1.2rem;
+    color: var(--white);
+    padding: .5rem 0;
 }
 
 .footer .box-container .box .links i{
@@ -387,21 +389,22 @@ section{
 
 .footer .box-container .box .links:hover i{
     padding-right: 2rem;
+    color: var(--pawsha);
 }
 
 .footer .box-container .box p{
-    line-height: 1.8;
-    font-size: 1.5rem;
-    color: var(--light-color);
+    line-height: 1.5;
+    font-size: 1.3rem;
+    color: var(--white);
     padding: 1rem 0;
 }
 
 .footer .box-container .box .share a{
-    height: 4rem;
-    width: 4rem;
-    line-height: 4rem;
+    height: 2rem;
+    width: 3rem;
+    line-height: 2rem;
     border-radius: .5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--black);
     margin-left: .2rem;
     background: #eee;
@@ -414,19 +417,19 @@ section{
 }
 
 .footer .box-container .box .email{
-    width: 100%;
+    width: 60%;
     margin: .7rem 0;
     padding: 1rem;
     border-radius: .5rem;
     background: #eee;
-    font-size: 1.6rem;
+    font-size: 0.9rem;
     color: var(--black);
     text-transform: none;
 }
 
 .footer .box-container .box .payment-img{
     margin-top: 2rem;
-    height: 3rem;
+    height: 5rem;
 }
 
 .footer .credit{
@@ -434,13 +437,12 @@ section{
     margin-top: 2rem;
     padding: 1rem;
     padding-top: 2.5rem;
-    font-size: 2rem;
-    color: var(--black);
-    border-top: var(--border);
+    font-size: 1.2rem;
+    color: var(--white);
 }
 
 .footer .credit span{
-    color:var(--orange);
+    color:var(--pawsha);
 }
 /*footer end*/
 
