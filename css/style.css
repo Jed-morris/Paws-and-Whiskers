@@ -41,6 +41,20 @@ section{
     padding: 2rem 9%;
 }
 
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: var(--black);
+}
+
+.heading span{
+    width: 300px;
+    height: 200px;
+    color:var(--pawsha);
+}
+
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -348,11 +362,38 @@ section{
 .home .content p{
     color:var(--black);
     font-size: 1.7rem;
-    padding:1rem 0;
+    padding: 1rem 0;
     line-height: 1.8;
 }
 /*Home End*/
 
+/* Products */
+
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.products .box-container .box{
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.products .box-container .box:hover{
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+.products .box-container .box img{
+    margin: 1rem 0;
+    height: 15rem;
+}
+/*  */
 
 /*footer*/
 .footer{
@@ -501,6 +542,7 @@ section{
     html{
         font-size: 50%;
     }
+
     .heading{
         font-size: 2.5rem;
     }
