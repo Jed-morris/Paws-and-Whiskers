@@ -1,0 +1,40 @@
+.fixed-top, .dropdown-menu {
+    background-color: steelblue;
+}
+
+.dropdown-menu a:hover {
+    background-color: orange;
+}
+
+.nav-icons .fas:hover {
+    color: orange;
+}
+
+.jumbotron {
+    width: 100%;
+    min-height: 100vh;
+    /*Search Startbackground-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    align-items: center;
+    gap: 1.5rem;
+    top: 0;
+}
+
+.menu-panel {
+    width: 100%;
+    min-height: 100vh;
+	margin-top: 3rem;
+}
+
+.card-container {
+	grid-template-columns: auto auto auto;
+}
+
+.card-img-top {
+	object-fit: cover;
+	height: 200px;
+	position: relative;
+}
