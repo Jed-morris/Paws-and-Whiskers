@@ -1,36 +1,56 @@
 <?php
 session_start();
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    include "db_connAdmin.php";
+if (isset ($_POST['adminusername']) &&
+    isset ($_POST['adminpassword'])) {
+       
+        include "db_conn1.php";
+        $adminusername = $_POST['adminusername'];
+        $adminpassword = $_POST['adminpassword'];
+    
+    }
+         //for the database
+         $data = "adminusername" .$adminusername;
 
-    $username = $_POST["username"];
-    $password = $_POST["password"];
 
-    $query = "SELECT * FROM users3 WHERE username=?";
-    $stmt = $conn->prepare($query);
-    $stmt->execute([$username]);
-
-    if ($stmt->rowCount() == 1) {
-        $user = $stmt->fetch();
-        $stored_password = $user['password'];
-
-        if (password_verify($password, $stored_password)) {
-            $_SESSION['ID'] = $user['id'];
-            $_SESSION['username'] = $username;
-            $_SESSION['admin_logged_in'] = true;
-            header("Location: admin_dashboard.php");
-            exit();
-        } else {
-            $error = "Incorrect password";
-        }
+    // Validation to check if username and password are not empty
+    if (empty($adminusername)) {
+        $em = "Username is required";
+        header("Location:admin_login.php?error=$em&$data");
+        exit;
+    } else if (empty($adminpassword)) {
+        $em = "password is required";
+        header("Location:admin_login.php?error=$em&$data");
+        exit;
     } else {
-        $error = "Username not found";
+    $sql = "SELECT * FROM users1 WHERE username=?";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([$adminusername]);
+
+    //bibilangin yung row kung nasaan yung user na mag lalalogin then ifefetch
+    if($stmt->rowCount()== 1){
+            
+        $user = $stmt->fetch();
+
+        $username = $user['username'];            
+        $password = $user['password'];
+        $id = $user['id'];
+
+         // mga error pag hindi nakapag input ng kailangang data
+         if($username === $adminusername) {
+            if (password_verify($adminpassword, $password)) {
+            $_SESSION ['ID'] = $id;
+            header("location: admin_dashboard2.php");
+            exit;
+    } else {
+            $em ="incorrect username or password";
+            header("Location: admin_login.php?error=$em&$data");
+            print_r ($em + $data);
+            exit;
+        }
     }
 
-    header("Location: admin.php?error=$error");
-    exit();
 }
+    }
 
 ?>
-
