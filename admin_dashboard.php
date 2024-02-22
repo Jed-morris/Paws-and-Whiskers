@@ -2,11 +2,7 @@
 
 session_start();
 
-if (!isset($_SESSION['admin_logged_in'])) {
-    // If 'admin_logged_in' is not set, redirect to the login page
-    header("Location: admin.php");
-    exit();
-}
+if (isset($_SESSION['ID']))
 
 ?>
 
@@ -20,7 +16,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
 </head>
 <body>
     
-<h3> Hello, <?=$_SESSION['username']?> </h3>
+<h2>Welcome, Admin! <?=$_SESSION['ID']?> </h2>
 <a href="logout_admin.php" class="btn btn-warning"> Logout</a>
 
 </body>
