@@ -23,7 +23,7 @@ if (isset ($_POST['adminusername']) &&
         header("Location:admin_login.php?error=$em&$data");
         exit;
     } else {
-    $sql = "SELECT * FROM users1 WHERE username=?";
+    $sql = "SELECT * FROM admin WHERE username=?";
     $stmt = $conn->prepare($sql);
     $stmt->execute([$adminusername]);
 
