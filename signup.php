@@ -10,7 +10,7 @@
 
     <style>
         body {
-    background-image: url('Images/cats2.jpg');
+    background-image: url('img/cats2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
