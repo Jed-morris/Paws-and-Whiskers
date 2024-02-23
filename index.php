@@ -70,17 +70,41 @@
             </row>
         </div>
     </section>
-
+    <div class="header">
+        <div class="shopping-cart">
+            <div class="item-box">
+                <div class="image">
+                    <img src="images/whikas.png" alt="">
+                </div>
+                <div class="name">
+                    <h3>Whiskas</h3>
+                </div>
+                <div class="totalPrice">
+                    <span class="price">₱2300</span>
+                </div>
+                <div class="quantity">
+                    <span class="minus"><</span>
+                    <span>1</span>
+                    <span class="plus">></span>
+                </div>
+                <!--<i class="fas fa-trash"></i>-->
+            </div>
+            <div class="btn w-100">
+                <button class="btn btn-warning">Close</button>
+                <button class="btn btn-success">Place Order</button>
+            </div>
+        </div>
+    </div>
     <script>
-            (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
+	(function(d, s, id) {
+        	var js, fjs = d.getElementsByTagName(s)[0];
                 js = d.createElement(s);
                 js.id = id;
                 js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v6.0&autoLogAppEvents=1'
                 fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
+            	}(document, 'script', 'facebook-jssdk'));
         </script>
-        <div class="fb-customerchat" attribution="wordpress" attribution_version="2.3" page_id="110063563909634"></div>
+	<div class="fb-customerchat" attribution="wordpress" attribution_version="2.3" page_id="110063563909634"></div>
         <script type="text/javascript">
             (function() {
                 var sa = document.createElement('script');
@@ -89,8 +113,7 @@
                 sa.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.ywxi.net/js/1.js';
                 var s = document.getElementsByTagName('script')[0];
                 s.parentNode.insertBefore(sa, s);
-            }
-            )();
+            })();
         </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

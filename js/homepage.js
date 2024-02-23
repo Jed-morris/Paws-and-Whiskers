@@ -35,15 +35,18 @@ let navbar = document.querySelector('.navbar');
 //}
 
 window.onscroll = () =>{
-    searchForm.classList.remove('active');
-    shoppingCart.classList.remove('active');
-    loginForm.classList.remove('active');
-    navbar.classList.remove('active');
+    //searchForm.classList.remove('active');
+    //shoppingCart.classList.remove('active');
+    //loginForm.classList.remove('active');
+    //navbar.classList.remove('active');
     
     
 }
 
 $(document).ready(function () {
+    let iconCartSpan = document.querySelector('.nav-icons span');
+
+    let carts = [];
     loadStocks();
     // Function to view products in Homepage
     function loadStocks() {
@@ -59,7 +62,7 @@ $(document).ready(function () {
                     rows += '<div class="card-body">';
                     rows += '<b>' + stock.name + '</b>';
                     rows += '<p>Php '+ stock.sales_price +'.00</p>';
-                    rows += '<button class="btn btn-primary">Add to cart</button>';
+                    rows += '<button class="btn btn-primary addCart" data-id="' + stock.id + '">Add to cart</button>';
                     rows += '</div>';
                     rows += '</div>';
                 });
@@ -71,7 +74,6 @@ $(document).ready(function () {
             url: '././model/wet_dogfood.php',
             success: function (response) {
                 var stocks = JSON.parse(response);
-                console.log(response);
                 var rows = '';
                 stocks.forEach(function (stock) {
                     rows += '<div class="card m-2">';
@@ -79,12 +81,83 @@ $(document).ready(function () {
                     rows += '<div class="card-body">';
                     rows += '<b>' + stock.name + '</b>';
                     rows += '<p>Php '+ stock.sales_price +'.00</p>';
-                    rows += '<button class="btn btn-primary">Add to cart</button>';
+                    rows += '<button class="btn btn-primary addCart" data-id="' + stock.id + '">Add to cart</button>';
                     rows += '</div>';
                     rows += '</div>';
                 });
                 $('#wet_dogfood').html(rows);
             }
         });
+        $.ajax({
+            type: 'GET',
+            url: '././model/dry_catfood.php',
+            success: function (response) {
+                var stocks = JSON.parse(response);
+                var rows = '';
+                stocks.forEach(function (stock) {
+                    rows += '<div class="card m-2">';
+                    rows += '<img class="card-img-top" src="./img/' + stock.image_dir + '"/>';
+                    rows += '<div class="card-body">';
+                    rows += '<b>' + stock.name + '</b>';
+                    rows += '<p>Php '+ stock.sales_price +'.00</p>';
+                    rows += '<button class="btn btn-primary addCart" data-id="' + stock.id + '">Add to cart</button>';
+                    rows += '</div>';
+                    rows += '</div>';
+                });
+                $('#dry_catfood').html(rows);
+            }
+        });
+        $.ajax({
+            type: 'GET',
+            url: '././model/wet_catfood.php',
+            success: function (response) {
+                var stocks = JSON.parse(response);
+                var rows = '';
+                stocks.forEach(function (stock) {
+                    rows += '<div class="card m-2">';
+                    rows += '<img class="card-img-top" src="./img/' + stock.image_dir + '"/>';
+                    rows += '<div class="card-body">';
+                    rows += '<b>' + stock.name + '</b>';
+                    rows += '<p>Php '+ stock.sales_price +'.00</p>';
+                    rows += '<button class="btn btn-primary addCart" data-id="' + stock.id + '">Add to cart</button>';
+                    rows += '</div>';
+                    rows += '</div>';
+                });
+                $('#wet_catfood').html(rows);
+            }
+        });
+    }
+
+    $(document).on('click', '.addCart', function (e) {
+        e.preventDefault();
+        let positionClick = e.target;
+        if (positionClick.classList.contains('addCart')) {
+            var id = $(this).data('id');
+            let itemCart = carts.findIndex((value) => value.id = id);
+            if (carts.length <= 0) {
+                carts = [{
+                    id: id,
+                    qty: 1
+                }]
+            }else if (itemCart < 0) {
+                carts.push({
+                    id:id,
+                    qty: 1
+                })
+            }else {
+                carts[itemCart].qty = carts[itemCart].qty + 1;
+            }
+            addCartToView();
+        }
+    });
+
+    const addCartToView = () => {
+        let totalQty = 0;
+        if (carts.length > 0) {
+            carts.forEach(cart => {
+                totalQty = totalQty + cart.qty;
+            })
+        }
+        iconCartSpan.innerText = totalQty;
     }
 });
