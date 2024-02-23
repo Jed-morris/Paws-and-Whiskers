@@ -38,3 +38,47 @@
 	height: 200px;
 	position: relative;
 }
+
+/*Shopping Start*/
+.header .shopping-cart{
+    position: absolute;
+    top: 60px;
+    right: -50%;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 30rem;
+    background: steelblue;
+}
+
+.header .shopping-cart.active{
+    right: 0;
+    transition: .4s linear;
+}
+
+.header .shopping-cart .item-box {
+    display: grid;
+    grid-template-columns: 50px 150px 0 auto;
+    gap: 0;
+    text-align: center;
+    align-items: center;
+}
+
+.header .shopping-cart .item-box .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header .shopping-cart .item-box .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+}
+
+.header .shopping-cart .item-box:nth-child(even){
+    background-color: lightblue;
+}
