@@ -1,9 +1,9 @@
 <?php
     class Database {
-        private $host = 'localhost';
-        private $username = 'root';
-        private $password = '';
-        private $database = 'mymp3_db';
+        private $host = '127.0.0.1:3306';
+        private $username = 'u507360145_root_mymp3';
+        private $password = 'mymp3_rootPass';
+        private $database = 'u507360145_mymp3_db';
         private $connection;
 
         public function __construct() {
