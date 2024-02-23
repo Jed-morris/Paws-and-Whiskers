@@ -51,7 +51,7 @@
                         </div>
                     </form>
                     <hr>
-                    <p class="text-center">Already have an account? <a href="index1.php">Log in</a></p>
+                    <p class="text-center">Already have an account? <a href="login.php">Log in</a></p>
                     <p class="text-center">Go to Admin Page-> <a href="admin.php">Admin Login</a></p>
                 </div>
             </div>

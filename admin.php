@@ -46,7 +46,7 @@
                             </div>
                         </form>
                         <hr>
-                        <p class="text-center">Go back to User's Login-> <a href="index1.php">Log in</a></p>
+                        <p class="text-center">Go back to User's Login-> <a href="login.php">Log in</a></p>
                     </div>
                 </div>
             </div>

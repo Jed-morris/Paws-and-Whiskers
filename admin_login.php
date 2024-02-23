@@ -44,7 +44,7 @@ if (isset ($_POST['adminusername']) &&
             exit;
     } else {
             $em ="incorrect username or password";
-            header("Location: admin_login.php?error=$em&$data");
+            header("Location: admin.php?error=$em&$data");
             print_r ($em + $data);
             exit;
         }
