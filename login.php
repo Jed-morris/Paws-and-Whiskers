@@ -33,7 +33,7 @@
                       <a href="/" class="btn btn-light d-flex justify-content-center align-items-center" style="width: 40px; height: 40px; border-radius: 50%;"><i class="fas fa-home flex justify-content-center align-items-center"></i></a>
                         <h2 class="text-center">Log In</h2>   
                         <hr>                 
-                          <form action="././login1.php" method="post">
+                          <form action="login1.php" method="post">
                             <div class="mb-3">
                                 <label for="username" class="form-label">Username</label>
                                 <input type="text" class="form-control" id="username" name="uname" value="<?php echo (isset($_GET['uname'])) ? $_GET['uname'] : "" ?>" placeholder="Enter your username">
