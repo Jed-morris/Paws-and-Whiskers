@@ -6,7 +6,9 @@
     <title>Paws and Whiskers - High Quality Food</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body class="bg-body-tertiary">
     <header class="h-auto">
@@ -62,8 +64,9 @@
             </div>
         </nav>
     </header>
-    <section class="menu-panel position-absolute" id="jumbotron">
-		<div class="container">
+    <div class="home">
+
+    <div class="container-1">
             <div class="row">
                 <div class="card-container content" id="main">
                     <h3><span>Paw</span>some goods for your <span>Furr Babies</span></h3>
@@ -73,6 +76,7 @@
                         <a href="#" class="btn">Know more</a>
                 </div>
             </div>
+        </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="card-container" id="dry_dogfood"></div>
@@ -83,13 +87,7 @@
             </row>
         </div>
 
-    </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-    <div class="header">
+    <div class="container-2">
         <div class="shopping-cart">
             <div class="item-box">
                 <div class="image">
@@ -114,6 +112,39 @@
             </div>
         </div>
     </div>
+    </div>
+        
+        <footer class="footer">
+            <div class="footercontainer-1">
+            <div class="content">
+                <div class="social">
+                    <a href="https://www.facebook.com/pawsandwhiskers12" class="facebook">
+                        <i class="bx bxl-facebook-circle"></i>                                       
+                    </a>
+                    <a href="https://www.linkedin.com/" class="linkedin">
+                        <i class="fab fa-linkedin-in"></i>                
+                    </a>
+                </div>
+
+                <div class="links">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+
+            <div class="footercontainer-2">
+                <p>All rights reserved. <em>Paws and Whiskers.</em> 2024 </p>
+            </div>
+
+        </footer>
+</div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <script>
 	(function(d, s, id) {
