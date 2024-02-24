@@ -15,11 +15,11 @@ if (isset ($_POST['uname']) &&
 
     if (empty($uname)) {
         $em = "Username is required";
-        header("Location:login.php?error=$em&$data");
+        header("Location:././login.php?error=$em&$data");
         exit;
     } else if (empty($pass)) {
         $em = "password is required";
-        header("Location:login.php?error=$em&$data");
+        header("Location:././login.php?error=$em&$data");
         exit;
     } else {
         $sql = "SELECT * FROM users WHERE Username= ?";
@@ -41,11 +41,11 @@ if (isset ($_POST['uname']) &&
                 if (password_verify($pass, $password)) {
                 $_SESSION ['ID'] = $id;
                 $_SESSION ['Email'] = $email;
-                header("location: user_dashboard.php");
+                header("location:././user_dashboard.php");
                 exit;
         } else {
                 $em ="incorrect username or password";
-                header("Location: login.php?error=$em&$data");
+                header("Location:././login.php?error=$em&$data");
                 exit;
         }
     }
