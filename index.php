@@ -63,24 +63,17 @@
 		<div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="card-container" id="dry_dogfood"></div>
-                    <div class="card-container" id="wet_dogfood"></div>
-                    <div class="card-container" id="dry_catfood"></div>
-                    <div class="card-container" id="wet_catfood"></div>
-                </div>
-            </row>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="content" id="main">
+                    <div class="card-container content" id="main">
                         <h3><span>Paw</span>some goods for your <span>Furr Babies</span></h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero nesciunt vel animi iste et! 
                             Illo reprehenderit et alias facere? Voluptatibus cumque pariatur 
                             autem aliquam officiis molestias hic sapiente illum perferendis.</p>
                             <a href="#" class="btn">Know more</a>
                     </div>
+                    <div class="card-container" id="dry_dogfood"></div>
+                    <div class="card-container" id="wet_dogfood"></div>
+                    <div class="card-container" id="dry_catfood"></div>
+                    <div class="card-container" id="wet_catfood"></div>
                 </div>
             </row>
         </div>
