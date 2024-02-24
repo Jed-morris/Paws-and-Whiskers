@@ -29,7 +29,7 @@
             <div class="col-md-4">
                 <div class="card transparent-card">
                     <div class="card-body">
-                    <a href="/" class="btn btn-light d-flex justify-content-center align-items-center" style="width: 40px; height: 40px; border-radius: 50%;"><i class="fas fa-home flex justify-content-center align-items-center"></i></a>
+                    <a href="index.php" class="btn btn-light d-flex justify-content-center align-items-center" style="width: 40px; height: 40px; border-radius: 50%;"><i class="fas fa-home flex justify-content-center align-items-center"></i></a>
                         <h2 class="text-center">Admin Page</h2>
                         <hr>
                         <form action="admin_login.php" method="post">
