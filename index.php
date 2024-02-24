@@ -74,7 +74,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="content">
+                    <div class="content" id="main">
                         <h3><span>Paw</span>some goods for your <span>Furr Babies</span></h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero nesciunt vel animi iste et! 
                             Illo reprehenderit et alias facere? Voluptatibus cumque pariatur 
