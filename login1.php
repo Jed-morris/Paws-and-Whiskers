@@ -22,7 +22,7 @@ if (isset ($_POST['uname']) &&
         header("Location:././login.php?error=$em&$data");
         exit;
     } else {
-        $sql = "SELECT * FROM users WHERE Username= ?";
+        $sql = "SELECT * FROM users WHERE username= ?";
         $stmt =  $conn->prepare($sql);
         $stmt->execute([$uname]);
 
@@ -43,14 +43,14 @@ if (isset ($_POST['uname']) &&
                 $_SESSION ['Email'] = $email;
                 header("location:././user_dashboard.php");
                 exit;
-        } else {
+            }else {
                 $em ="incorrect username or password";
                 header("Location:././login.php?error=$em&$data");
                 exit;
+            }   
         }
-    }
 
-}
     }
+}
 
 ?>
