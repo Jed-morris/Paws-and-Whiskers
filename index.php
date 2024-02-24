@@ -70,6 +70,21 @@
                 </div>
             </row>
         </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="content">
+                        <h3><span>Paw</span>some goods for your <span>Furr Babies</span></h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero nesciunt vel animi iste et! 
+                            Illo reprehenderit et alias facere? Voluptatibus cumque pariatur 
+                            autem aliquam officiis molestias hic sapiente illum perferendis.</p>
+                            <a href="#" class="btn">Know more</a>
+                    </div>
+                </div>
+            </row>
+        </div>
+
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -124,7 +139,7 @@
         </script>
 
     <script>
-        
+
         function openMenu(menuName) {
             var i, cardContainer, navLinks;
             cardContainer = document.getElementsByClassName("card-container");
