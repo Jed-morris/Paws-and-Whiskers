@@ -30,7 +30,7 @@
         <div class="col-md-4">
             <div class="card transparent-card">
                 <div class="card-body">
-                    <a href="/" class="btn btn-light d-flex justify-content-center align-items-center" style="width: 40px; height: 40px; border-radius: 50%;"><i class="fas fa-home"></i></a>
+                    <a href="index.php" class="btn btn-light d-flex justify-content-center align-items-center" style="width: 40px; height: 40px; border-radius: 50%;"><i class="fas fa-home"></i></a>
                     <h2 class="text-center">Sign Up</h2>
                     <hr>
                     <form action="signup1.php" method="post">

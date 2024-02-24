@@ -54,7 +54,10 @@
                     <div class="fas fa-search ms-3" id="search-btn"></div>
                     <div class="fas fa-shopping-cart ms-3" id="cart-btn"></div>
                     <span>0</span>
-                    <div class="fas fa-user ms-3" id="login-btn"></div>
+                    <!-- Sign-up Button -->
+                    <div class="text-end">
+                        <a href="login.php"><button class="bn13">Login</button></a>
+                    </div>
                 </div>
             </div>
         </nav>
