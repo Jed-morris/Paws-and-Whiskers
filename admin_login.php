@@ -36,21 +36,21 @@ if (isset ($_POST['adminusername']) &&
         $password = $user['password'];
         $id = $user['id'];
 
-         // mga error pag hindi nakapag input ng kailangang data
-         if($username === $adminusername) {
+        // mga error pag hindi nakapag input ng kailangang data
+        if($username === $adminusername) {
             if (password_verify($adminpassword, $password)) {
-            $_SESSION ['ID'] = $id;
-            header("location: admin_dashboard2.php");
-            exit;
-    } else {
+                $_SESSION ['ID'] = $id;
+                header("location: admin_dashboard2.php");
+                exit;
+            }else {
             $em ="incorrect username or password";
             header("Location: admin.php?error=$em&$data");
             print_r ($em + $data);
             exit;
+            }
         }
-    }
 
-}
     }
+}
 
 ?>

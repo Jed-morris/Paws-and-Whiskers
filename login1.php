@@ -22,7 +22,7 @@ if (isset ($_POST['uname']) &&
         header("Location:login.php?error=$em&$data");
         exit;
     } else {
-        $sql = "SELECT * FROM users2 WHERE Username= ?";
+        $sql = "SELECT * FROM users WHERE Username= ?";
         $stmt =  $conn->prepare($sql);
         $stmt->execute([$uname]);
 
