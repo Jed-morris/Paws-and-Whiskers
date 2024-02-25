@@ -1,7 +1,3 @@
-body {
-    padding-bottom: 100px;
-}
-
 .fixed-top, .dropdown-menu {
     background-color: steelblue;
 }
@@ -14,36 +10,23 @@ body {
     color: orange;
 }
 
-.jumbotron {
-    width: 100%;
-    min-height: 100vh;
-    /*Search Startbackground-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
-    align-items: center;
-    gap: 1.5rem;
-    top: 0;
-}
-
 .menu-panel {
-    width: 100%;
-    min-height: 100vh;
 	margin-top: 3rem;
+    overflow-x: hidden;
 }
 
 .card-container {
+    display: grid;
 	grid-template-columns: auto auto auto;
+    gap: 1.5rem;
+    overflow-x: hidden;
 }
 
 .card-img-top {
 	object-fit: cover;
 	height: 200px;
-	position: relative;
 }
 
-/*Shopping Start*/
 .header .shopping-cart{
     position: absolute;
     top: 60px;
@@ -87,15 +70,62 @@ body {
     background-color: lightblue;
 }
 
+#login-btn {
+    display: inline-block;
+    padding: 0.65em 1.6em;
+    border: 3px solid #ffffff;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.2s;
+    animation: bn13bouncy 3s infinite linear;
+    position: relative;
+    background-color: #7c99ab;
+  }
+  
+  #login-btn:hover {
+    background-color: white;
+    color:royalblue;
+  }
+  
+  @keyframes bn13bouncy {
+    0% {
+      top: 0em;
+    }
+    40% {
+      top: 0em;
+    }
+    43% {
+      top: -0.9em;
+    }
+    46% {
+      top: 0em;
+    }
+    48% {
+      top: -0.4em;
+    }
+    50% {
+      top: 0em;
+    }
+    100% {
+      top: 0em;
+    }
+  }
+
 .footer {
     text-align: center;
     position: absolute;
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: steelblue; /* Updated background color */
-    color: #fff; /* Updated text color */
-    padding: 20px 0; /* Added padding to top and bottom */
+    background-color: steelblue;
+    color: #fff;
+    padding: 20px 0;
 }
 
 .footercontainer-1 {
@@ -115,11 +145,11 @@ body {
     font-size: 20px;
     position: relative;
     overflow: hidden;
-    transition: background-color 0.3s; /* Add transition for background color change */
+    transition: background-color 0.3s;
 }
 
 .footercontainer-1 .social a:hover {
-    background-color: lightseagreen; /* Change background color on hover */
+    background-color: lightseagreen;
 }
 
 .footercontainer-1 .social a::before {
@@ -143,13 +173,13 @@ body {
 }
 
 .footercontainer-1 .links a {
-    color: #fff; /* Set text color for links */
+    color: #fff;
     text-decoration: none; /* Remove underline from links */
     transition: color 0.3s; /* Add transition for hover effect */
 }
 
 .footercontainer-1 .links a:hover {
-    color: aquamarine; /* Change text color on hover */
+    color: aquamarine;
 }
 
 .footercontainer-2 {
@@ -158,6 +188,6 @@ body {
 }
 
 .footercontainer-2 p, .footercontainer-2 b {
-    color: #ccc; /* Set text color for footer container 2 */
-    font-size: 14px; /* Set font size for footer container 2 */
+    color: #ccc;
+    font-size: 14px;
 }

@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paws and Whiskers - High Quality Food</title>
+    <title>Paws and Whiskers- Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
-    
 </head>
 <body class="bg-body-tertiary">
     <header class="h-auto">
         <nav class="navbar navbar-expand-md fixed-top">
             <div class="container">
-                <a class="navbar-brand text-light" onclick="openMenu('main', 'this', 'main')" id="defaultOpen"><i class="fa-solid fa-paw"></i> Paws and Whiskers <i class="fa-solid fa-cat"></i></a>
+                <a class="navbar-brand text-light" href="#"><i class="fa-solid fa-paw"></i> Paws and Whiskers <i class="fa-solid fa-cat"></i></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -23,31 +22,31 @@
                     <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pet Foods</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item text-light" type="button" onclick="openMenu('dry_dogfood', 'this', 'red')" id="defaultOpen">Dry Dog Food</a></li>
-                                <li><a class="dropdown-item text-light" type="button" onclick="openMenu('wet_dogfood', 'this', 'green')">Wet Dog Food</a></li>
-                                <li><a class="dropdown-item text-light" type="button" onclick="openMenu('dry_catfood', 'this', 'blue')">Dry Cat Food</a></li>
-                                <li><a class="dropdown-item text-light" type="button" onclick="openMenu('wet_catfood', 'this', 'orange')">Wet Cat Food</a></li>
+                                <li><a class="dropdown-item text-light" href="#">Dry Dog Food</a></li>
+                                <li><a class="dropdown-item text-light" href="#">Wet Dog Food</a></li>
+                                <li><a class="dropdown-item text-light" href="#">Dry Cat Food</a></li>
+                                <li><a class="dropdown-item text-light" href="#">Wet Cat Food</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pet Treats</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item text-light" type="button" onclick="openMenu('dog_treats', 'this', 'red')">Dog Treats</a></li>
-                                <li><a class="dropdown-item text-light" type="button" onclick="openMenu('cat_treats', 'this', 'green')">Cat Treats</a></li>
+                                <li><a class="dropdown-item text-light" href="#">Dog Treats</a></li>
+                                <li><a class="dropdown-item text-light" href="#">Cat Treats</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Potty and Litter</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item text-light" type="button" onclick="openMenu('potty_dogs', 'this', 'red')">Potty Training Pads</a></li>
-                                <li><a class="dropdown-item text-light" type="button" onclick="openMenu('cat_Litter', 'this', 'green')">Cat Litter</a></li>
+                                <li><a class="dropdown-item text-light" href="#">Potty Training Pads</a></li>
+                                <li><a class="dropdown-item text-light" href="#">Cat Litter</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Health & Wellness</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item text-light" type="button" onclick="openMenu('vit_supplement', 'this', 'red')">Vitamins & Supplements</a></li>
-                                <li><a class="dropdown-item text-light" type="button" onclick="openMenu('treatment', 'this', 'green')">Skin & Coat Treatment</a></li>
+                                <li><a class="dropdown-item text-light" href="#">Vitamins & Supplements</a></li>
+                                <li><a class="dropdown-item text-light" href="#">Skin & Coat Treatment</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -58,64 +57,59 @@
                     <span>0</span>
                     <!-- Sign-up Button -->
                     <div class="text-end">
-                        <a href="login.php"><button class="bn13">Login</button></a>
+                        <a href="login.php"><button class="bn14" id="login-btn">Login</button></a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <div class="home">
-
-    <div class="container-1">
+        <div class="container-1">
             <div class="row">
                 <div class="card-container content" id="main">
                     <h3><span>Paw</span>some goods for your <span>Furr Babies</span></h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero nesciunt vel animi iste et! 
                         Illo reprehenderit et alias facere? Voluptatibus cumque pariatur 
                         autem aliquam officiis molestias hic sapiente illum perferendis.</p>
-                        <a href="#" class="btn">Know more</a>
+                    <a href="#" class="btn" id="defaultOpen">Know more</a>
                 </div>
             </div>
         </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card-container" id="dry_dogfood"></div>
-                    <div class="card-container" id="wet_dogfood"></div>
-                    <div class="card-container" id="dry_catfood"></div>
-                    <div class="card-container" id="wet_catfood"></div>
-                </div>
-            </row>
-        </div>
-
-    <div class="container-2">
-        <div class="shopping-cart">
-            <div class="item-box">
-                <div class="image">
-                    <img src="images/whikas.png" alt="">
-                </div>
-                <div class="name">
-                    <h3>Whiskas</h3>
-                </div>
-                <div class="totalPrice">
-                    <span class="price">₱2300</span>
-                </div>
-                <div class="quantity">
-                    <span class="minus"><</span>
-                    <span>1</span>
-                    <span class="plus">></span>
-                </div>
-                <!--<i class="fas fa-trash"></i>-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card-container" id="dry_dogfood"></div>
+                <div class="card-container" id="wet_dogfood"></div>
+                <div class="card-container" id="dry_catfood"></div>
+                <div class="card-container" id="wet_catfood"></div>
             </div>
-            <div class="btn w-100">
-                <button class="btn btn-warning">Close</button>
-                <button class="btn btn-success">Place Order</button>
+        </div>
+        <div class="container-2">
+            <div class="shopping-cart">
+                <div class="item-box">
+                    <div class="image">
+                        <img src="img/cats2.png" alt="cats">
+                    </div>
+                    <div class="name">
+                        <h3>Whiskas</h3>
+                    </div>
+                    <div class="totalPrice">
+                        <span class="price">₱2300</span>
+                    </div>
+                    <div class="quantity">
+                        <span class="minus"><</span>
+                        <span>1</span>
+                        <span class="plus">></span>
+                    </div>
+                </div>
+                <div class="btn w-100">
+                    <button class="btn btn-warning">Close</button>
+                    <button class="btn btn-success">Place Order</button>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-        
-        <footer class="footer">
-            <div class="footercontainer-1">
+    <div class="footer">
+        <div class="footercontainer-1">
             <div class="content">
                 <div class="social">
                     <a href="https://www.facebook.com/pawsandwhiskers12" class="facebook">
@@ -125,7 +119,6 @@
                         <i class="fab fa-linkedin-in"></i>                
                     </a>
                 </div>
-
                 <div class="links">
                     <a href="#"></a>
                     <a href="#"></a>
@@ -133,18 +126,13 @@
                 </div>
             </div>
         </div>
-
-            <div class="footercontainer-2">
-                <p>All rights reserved. <em>Paws and Whiskers.</em> 2024 </p>
-            </div>
-
-        </footer>
-</div>
-
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <div class="footercontainer-2">
+            <p>All rights reserved. <em>Paws and Whiskers.</em> 2024 </p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <script>
 	(function(d, s, id) {
@@ -165,10 +153,9 @@
                 var s = document.getElementsByTagName('script')[0];
                 s.parentNode.insertBefore(sa, s);
             })();
-        </script>
+    </script>
 
     <script>
-
         function openMenu(menuName) {
             var i, cardContainer, navLinks;
             cardContainer = document.getElementsByClassName("card-container");
@@ -182,6 +169,6 @@
     </script>
 
     <script src="js/index.js"></script>
-    
+
 </body>
 </html>
