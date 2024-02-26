@@ -28,7 +28,7 @@ if (isset($_POST['uname']) && //Used to determine whether a var is set or declar
     } 
 
     // Check if the email is already in use
-    $sql = "SELECT * FROM users2 WHERE Email=?";
+    $sql = "SELECT * FROM users WHERE Email=?";
     $stmt = $conn->prepare($sql);
     $stmt->execute([$email]);
     $user = $stmt->fetch();
@@ -43,7 +43,7 @@ if (isset($_POST['uname']) && //Used to determine whether a var is set or declar
         $pass = password_hash($pass, PASSWORD_DEFAULT);
         
         // Insert user data into the database
-        $sql = "INSERT INTO users2(Username, Email, password)
+        $sql = "INSERT INTO users(Username, Email, password)
                     VALUES (?, ?, ?)";
         $stmt = $conn->prepare($sql);
         $stmt->execute([$uname, $email, $pass]);
