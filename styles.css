@@ -1,0 +1,120 @@
+.navbar, .dropdown-menu {
+    background-color: steelblue;
+}
+
+.dropdown-menu a:hover {
+    background-color: orange;
+}
+
+.nav-icons .fas:hover {
+    color: orange;
+}
+
+.jumbotron {
+    background: url(https://cat-world.com/wp-content/uploads/2017/04/can-cats-eat-dog-food-1.jpg);
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/** signup and login form styles **/
+.signup-form {
+    display: none;
+}
+
+.form-container.active .signup-form {
+    display: block;
+}
+
+.form-container.active .login-form {
+    display: none;
+}
+
+#message, #matchAlert, #dupAlert {
+    display: none;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+
+.item-list {
+    width: 100%;
+	margin-top: 3rem;
+}
+
+.card-container {
+	grid-template-columns: auto auto auto;
+}
+
+.card-img-top {
+	object-fit: cover;
+	height: 100%;
+	position: relative;
+}
+
+/*Shopping Start*/
+.slider .shopping-cart{
+    position: absolute;
+    display: none;
+    top: 60px;
+    right: -50%;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 30rem;
+    background: steelblue;
+}
+
+.slider .shopping-cart.active{
+    display: block;
+    right: 0;
+    transition: .4s linear;
+}
+
+.slider .shopping-cart .item-box {
+    display: grid;
+    grid-template-columns: 50px 150px 0 auto;
+    gap: 0;
+    text-align: center;
+    align-items: center;
+}
+
+.slider .shopping-cart .item-box .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider .shopping-cart .item-box .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+}
+
+.slider .shopping-cart .item-box:nth-child(even){
+    background-color: lightblue;
+}
