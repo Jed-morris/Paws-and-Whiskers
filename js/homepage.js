@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
         var data = new FormData(this);
         $.ajax({
-            url: '/model/homepage.php',
+            url: '.././model/product.php',
             type: 'POST',
             data: data,
             processData: false,
