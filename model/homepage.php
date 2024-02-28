@@ -18,7 +18,7 @@ class Users {
         $email = $connection->real_escape_string($email);
         $password = $connection->real_escape_string($password);
 
-        $duplicate = mysqli_query($connection, "SELECT * FROM users2 WHERE username='$username' OR email='$email'");
+        $duplicate = mysqli_query($connection, "SELECT * FROM users WHERE username='$username' OR email='$email'");
 
         if (mysqli_num_rows($duplicate) > 0) {
             return false;
