@@ -1,5 +1,5 @@
 <!--Footer-->
-<section class="footer">
+<footer class="footer">
         <div class="box-container">
             <div class="box">
                 <h3> <i class="fa-solid fa-paw"></i>  Paws and Whiskers  <i class="fa-solid fa-cat"></i> </h3>
@@ -39,7 +39,7 @@
         </div>
 
         <div class="credit"> <span>Made</span> with ♥ by <span> Paws and Whiskers</span> | All Rights Reserved 2024</div>
-    </section>
+    </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
