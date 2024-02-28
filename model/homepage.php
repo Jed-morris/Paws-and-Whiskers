@@ -24,7 +24,7 @@ class Users {
             return false;
             //username or email has already taken
         }else {
-            $sql = "INSERT INTO users2 ( username, first_name, last_name, contact_number, email, password) VALUES ('$username', '$fname', '$lname', '$num', '$email', '$password')";
+            $sql = "INSERT INTO users ( username, first_name, last_name, contact_number, email, password) VALUES ('$username', '$fname', '$lname', '$num', '$email', '$password')";
             if ($connection->query($sql) === TRUE) {
                 return true;
             } else {
