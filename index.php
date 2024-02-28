@@ -44,4 +44,10 @@
         </div>
     </div>
 </div>
+
+<!-- Testimonials -->
+<section class="review" id="review">
+        
+        </section>
+        
 <?php include('footer.php')?>
