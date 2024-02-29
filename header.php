@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags and title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paws and Whiskers- Home</title>
@@ -9,9 +10,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-body-tertiary">
+        <!-- Body --> 
     <header class="h-auto">
-        <!-- Navigation bar -->
+         <!-- Header -->
         <nav class="navbar navbar-expand-md fixed-top">
+            <!-- Navigation bar -->
             <div class="container">
                 <a class="navbar-brand text-light" onclick="openItems('main', 'this', 'main')" id="defaultOpen"><i class="fa-solid fa-paw"></i> Paws and Whiskers <i class="fa-solid fa-cat"></i></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
