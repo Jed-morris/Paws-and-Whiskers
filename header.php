@@ -10,6 +10,7 @@
 </head>
 <body class="bg-body-tertiary">
     <header class="h-auto">
+        <!-- Navigation bar -->
         <nav class="navbar navbar-expand-md fixed-top">
             <div class="container">
                 <a class="navbar-brand text-light" onclick="openItems('main', 'this', 'main')" id="defaultOpen"><i class="fa-solid fa-paw"></i> Paws and Whiskers <i class="fa-solid fa-cat"></i></a>

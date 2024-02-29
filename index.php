@@ -1,5 +1,9 @@
 <?php include('header.php')?>
+
+<!-- Main content sections -->
 <div class="item-list position-absolute">
+
+    <!-- Container for item lists -->
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -20,6 +24,7 @@
     </div>
 </div>
 <div class="slider">
+    <!-- Shopping cart slider -->
     <div class="shopping-cart">
         <div class="item-box">
             <div class="image">
@@ -45,9 +50,7 @@
     </div>
 </div>
 
-<!-- Testimonials -->
-<section class="review" id="review">
-        
-        </section>
+<!-- Testimonials section -->
+<section class="review" id="review"> </section>
         
 <?php include('footer.php')?>
