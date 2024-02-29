@@ -7,26 +7,17 @@
                 <div class="share">
                     <a href="#" class="fab fa-facebook-f"></a>
                     <a href="#" class="fa-brands fa-square-x-twitter"></a>
-                    <a href="#" class="fab fa-instagram"></a>
-                    <a href="#" class="fab fa-tiktok"></a>
                 </div>
             </div>
             <div class="box">
                 <h3>Contact Info</h3>
-                <a href="#" class="links"> <i class="fas fa-phone"></i> 09158429378 </a>
                 <a href="#" class="links"> <i class="fas fa-envelope"></i> pawsandwhiskers@gmail.com </a>
                 <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Brgy. Santo Tomas Biñan City, Laguna </a>
             </div>
 
             <div class="box">
                 <h3>Quick Links</h3>
-                <a href="FAQs.html" class="links"> <i class="fas fa-arrow-right"></i> FAQs </a>
-                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Reviews </a>
                 <a href="#" class="links"> <i class="fas fa-arrow-right"></i> About us </a>
-                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Terms & Conditions </a>
-                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Refund and Exchange </a>
-                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Privacy Policy </a>
-
             </div>
 
             <div class="box">
