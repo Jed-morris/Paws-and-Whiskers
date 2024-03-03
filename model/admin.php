@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $conn = mysqli_connect("localhost", "root", "", "mymp3_db");
+    $conn = mysqli_connect("127.0.0.1:3306", "u507360145_root_mymp3", "mymp3_rootPass", "u507360145_mymp3_db");
     // IF
     if(isset($_POST["action"])){
         if($_POST["action"] == "login"){
@@ -15,7 +15,7 @@ function login(){
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    $user = mysqli_query($conn, "SELECT * FROM users2 WHERE username = '$username'");
+    $user = mysqli_query($conn, "SELECT * FROM users WHERE username = '$username'");
 
     if(mysqli_num_rows($user) > 0){
         $row = mysqli_fetch_assoc($user);

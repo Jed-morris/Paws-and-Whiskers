@@ -3,7 +3,7 @@
     if (isset($_SESSION["id"])) {
         # code...
         $id = $_SESSION["id"];
-        $user = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM users2 WHERE id = $id"));
+        $user = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM users WHERE id = $id"));
     }else {
         header("Location: login.php");
     }
