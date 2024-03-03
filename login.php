@@ -1,3 +1,8 @@
+<div class="alert alert-danger" role="alert">
+    This is a danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+
 <div class="form-container">
     <form class="login-form" id="login-form">
         <!--<img id="exit" class="mb-4" src="logo.png" alt=""> -->

@@ -4,11 +4,9 @@
         <div class="row">
             <div class="col-md-12">
                 <section class="jumbotron text-center card-container" id="main">
-                    <div class="col-md-12 mt-5">
-                        <h1><span>Paw</span>some goods for your <span>Furr Babies</span></h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero nesciunt vel animi iste et! Illo reprehenderit et alias facere? Voluptatibus cumque pariatur autem aliquam officiis molestias hic sapiente illum perferendis.</p>
-                        <a href="#" class="btn btn-primary">Know more</a>
-                    </div>
+                    <h1><span>Paw</span>some goods for your <span>Furr Babies</span></h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero nesciunt vel animi iste et! Illo reprehenderit et alias facere? Voluptatibus cumque pariatur autem aliquam officiis molestias hic sapiente illum perferendis.</p>
+                    <a href="#" class="btn btn-primary">Know more</a>
                 </section>
                 <section class="card-container" id="dry_dogfood"></section>
                 <section class="card-container" id="wet_dogfood"></section>
