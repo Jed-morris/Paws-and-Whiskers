@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         $.ajax({
             type: 'GET',
-            url: '././model/dry_catfood.php',
+            url: './model/dry_catfood.php',
             success: function (response) {
                 var stocks = JSON.parse(response);
                 var rows = '';

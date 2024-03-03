@@ -118,3 +118,140 @@
 .slider .shopping-cart .item-box:nth-child(even){
     background-color: lightblue;
 }
+
+/*footer*/
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 999;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    gap: 1.2rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 1.5rem;
+    color:var(--pawsha);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i{
+    color: var(--orange);
+}
+
+.footer .box-container .box .links{
+    display: block;
+    font-size: 1.2rem;
+    color: var(--white);
+    padding: .5rem 0;
+}
+
+.footer .box-container .box .links i{
+    color: var(--orange);
+    padding-right: .5rem;
+}
+
+.footer .box-container .box .links:hover i{
+    padding-right: 2rem;
+    color: var(--pawsha);
+}
+
+.footer .box-container .box p{
+    line-height: 1.5;
+    font-size: 1.3rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .share a{
+    height: 2rem;
+    width: 3rem;
+    line-height: 2rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    color: var(--black);
+    margin-left: .2rem;
+    background: #eee;
+    text-align: center;
+}
+
+.footer .box-container .box .share a:hover{
+    background: var(--orange);
+    color: #fff;
+}
+
+.footer .box-container .box .email{
+    width: 60%;
+    margin: .7rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 0.9rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.footer .box-container .box .payment-img{
+    margin-top: 2rem;
+    height: 5rem;
+}
+
+.footer .credit{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.footer .credit span{
+    color:var(--pawsha);
+}
+
+@media (max-width: 575px) {
+    .navbar, .dropdown-menu {
+        background-color: steelblue;
+    }
+    /* Navbar and dropdown menu text color */
+    .navbar-brand, .nav-link, .dropdown-item {
+        color: white;
+    }
+
+    /* Navbar toggler color */
+    .navbar-toggler-icon {
+        color: white;
+    }
+
+    /* Navbar icons color */
+    .nav-icons .fas {
+        color: white;
+    }
+
+    /* Footer styles */
+    .footer {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+   
+}
+
+@media (max-width: 992px) {
+    
+}
+
+
+@media (min-width: 1200px) {
+    
+}
