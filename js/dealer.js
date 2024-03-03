@@ -20,12 +20,13 @@ $(document).ready(function() {
         }
     });
 
-    // Function to load products
+    // Function to load dealers
     function loadDealers() {
         $.ajax({
             type: 'GET',
             url: '.././model/dealer.php',
             success: function (response) {
+                console.log(response);
                 var dealers = JSON.parse(response);
                 var rows = '';
                 dealers.forEach(function (dealer) {
