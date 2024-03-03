@@ -11,7 +11,7 @@ class Dealer {
 
     public function read() {
         $connection = $this->db->getConnection();
-        $sql = "SELECT id, dealer_name FROM dealers";
+        $sql = "SELECT * FROM dealers";
         $result = $connection->query($sql);
         $dealer = array();
         if ($result->num_rows > 0) {
