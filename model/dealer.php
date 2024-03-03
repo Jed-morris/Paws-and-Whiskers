@@ -26,8 +26,22 @@ class Dealer {
 // Handle AJAX requests
 $dealer = new Dealer();
 
-// Fetch options from the database
-$options = $dealer->read();
-
-// Output options as JSON
-echo json_encode($options);
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    if (isset($_GET['id'])) {
+        // Get product by ID
+        $id = $_GET['id'];
+        $options = $dealer->read();
+        foreach ($options as $row) {
+            if ($row['id'] == $id) {
+                echo json_encode($row);
+                break;
+            }
+        }
+    } else {
+        // Get all products
+        // Fetch dealers data from the database
+        $options = $dealer->read();
+        // Output options as JSON
+        echo json_encode($options);
+    }
+}

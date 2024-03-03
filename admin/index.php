@@ -3,7 +3,50 @@
     <div class="container-fluid">
         <div class="card-container" id="main">
         </div>
-        <div class="card-container" id="dealers"> Dealers </div>
+        <div class="card-container" id="dealers">
+        <div class="row">
+                <div class="col-md-12 mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <span><i class="bi bi-table me-2"></i></span> Data Table Dealers
+                            <button type="button" class="btn btn-primary mt-3 mb-3" data-bs-toggle="modal" data-bs-target="#addDealerModal">Add Dealer</button>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="example" class="table table-striped data-table" style="width: 100%">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Dealer Name</th>
+                                            <th>Logo</th>
+                                            <th>Website</th>
+                                            <th>Phone</th>
+                                            <th>Email</th>
+                                            <th>Address</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="dealerTableBody">
+                                        <!-- Dealer list will be loaded here -->
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Dealer Name</th>
+                                            <th>Logo</th>
+                                            <th>Website</th>
+                                            <th>Phone</th>
+                                            <th>Email</th>
+                                            <th>Address</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-container" id="categories"> Categories </div>
         <div class="card-container" id="inventory">
             <div class="row">
                 <div class="col-md-12 mb-3">
