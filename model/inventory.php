@@ -100,7 +100,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
         $qty = $_POST['editQty'];
 
         if ($data->update($id, $code, $qty)) {
-            echo 'Product updated successfully';
+            echo 'Stocks updated successfully';
         } else {
             echo 'Failed to updated product';
         }

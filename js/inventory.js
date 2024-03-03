@@ -46,13 +46,24 @@ $(document).ready(function() {
         });
     });
 
-    // Update Stocks form submit
+    // Update product form submit
     $('#editStockForm').submit(function (e) {
         e.preventDefault();
-        var data = $(this).serialize();
-            $.post('.././model/inventory.php', data, function (response) {
+        var data = new FormData(this);
+        $.ajax({
+            type: 'POST',
+            url: '.././model/inventory.php',
+            data: data,
+            processData: false,
+            contentType: false,
+            success: function(response) {
+                console.log(response);
                 $('#editStockModal').modal('hide');
                 loadStocks();
+            },
+            error: function(xhr, status, error) {
+                console.error('Error uploading image: ' + error);
+            }
         });
     });
 

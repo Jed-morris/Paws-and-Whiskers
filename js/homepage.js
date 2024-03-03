@@ -1,20 +1,10 @@
 let searchForm = document.querySelector('.search-form');
 
-document.querySelector('#search-btn').onclick = () =>{
-    searchForm.classList.toggle('active');
-    shoppingCart.classList.remove('active');
-    loginForm.classList.remove('active');
-    navbar.classList.remove('active');
-}
+
 
 let shoppingCart = document.querySelector('.shopping-cart');
 
-document.querySelector('#cart-btn').onclick = () =>{
-    shoppingCart.classList.toggle('active');
-    searchForm.classList.remove('active');
-    loginForm.classList.remove('active');
-    navbar.classList.remove('active');
-}
+
 
 window.onscroll = () =>{
     //searchForm.classList.remove('active');
@@ -23,10 +13,23 @@ window.onscroll = () =>{
     //navbar.classList.remove('active');
 }
 
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
+const appendAlert = (message, type) => {
+    const wrapper = document.createElement('div');
+    wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+    ].join('')
+
+    alertPlaceholder.append(wrapper);
+}
+
 document.addEventListener('DOMContentLoaded', function () {
-	let formContainer = document.querySelector(".form-container");
-	let signUpBtn = document.querySelector("#signUp");
-    let loginBtn = document.querySelector("#logIn");
+	const formContainer = document.querySelector(".form-container"),
+	signUpBtn = document.querySelector("#signUp"),
+    loginBtn = document.querySelector("#logIn");
 
 	var password=document.getElementById("floatingPwd");
 	var confirmpwd=document.getElementById("floatingCPassword");
@@ -39,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	loginBtn.addEventListener("click",(e) =>  {
 		formContainer.classList.remove("active");
-        console.log(e);
 	});
 
 	signUpBtn.addEventListener("click",(e) =>  {
@@ -126,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function loadStocks() {
         $.ajax({
             type: 'GET',
-            url: './model/dry_dogfood.php',
+            url: '././model/dry_dogfood.php',
             success: function (response) {
                 var stocks = JSON.parse(response);
                 var rows = '';
@@ -145,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         $.ajax({
             type: 'GET',
-            url: './model/wet_dogfood.php',
+            url: '././model/wet_dogfood.php',
             success: function (response) {
                 var stocks = JSON.parse(response);
                 var rows = '';
@@ -164,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         $.ajax({
             type: 'GET',
-            url: './model/dry_catfood.php',
+            url: '././model/dry_catfood.php',
             success: function (response) {
                 var stocks = JSON.parse(response);
                 var rows = '';
@@ -183,7 +185,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         $.ajax({
             type: 'GET',
-            url: './model/wet_catfood.php',
+            url: '././model/wet_catfood.php',
             success: function (response) {
                 var stocks = JSON.parse(response);
                 var rows = '';
@@ -235,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function () {
         iconCartSpan.innerText = totalQty;
     }
 
-    // Add login form submit
+    // Add signup form submit
     $('#signupForm').submit(function (e) {
         e.preventDefault();
         var data = new FormData(this);
@@ -246,10 +248,39 @@ document.addEventListener('DOMContentLoaded', function () {
             processData: false,
             contentType: false,
             success: function(response) {
-                console.log(response);
+                if (response) {
+                    appendAlert(response,'danger');
+                } else {
+                    appendAlert('Your account has been successfully created!','success');
+                    formContainer.classList.remove("active");
+                }
             },
             error: function(xhr, status, error) {
-                console.error('Error uploading image: ' + error);
+                appendAlert(error,'danger');
+            }
+        });
+    });
+
+    // Add signup form submit
+    $('#loginForm').submit(function (e) {
+        e.preventDefault();
+        var data = new FormData(this);
+        $.ajax({
+            url: '././model/homepage.php',
+            type: 'POST',
+            data: data,
+            processData: false,
+            contentType: false,
+            success: function(response) {
+                if (response) {
+                    appendAlert(response,'danger');
+                } else {
+                    window.location.reload();
+                    console.log(response);
+                }
+            },
+            error: function(xhr, status, error) {
+                appendAlert(error,'danger');
             }
         });
     });
