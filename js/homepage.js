@@ -1,10 +1,6 @@
 let searchForm = document.querySelector('.search-form');
 
-
-
 let shoppingCart = document.querySelector('.shopping-cart');
-
-
 
 window.onscroll = () =>{
     //searchForm.classList.remove('active');
